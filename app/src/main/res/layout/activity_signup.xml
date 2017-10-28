@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.wot.childapp.SignupActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginBottom="30dp"
+            >
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Child Name"
+                android:id="@+id/childname"
+                android:layout_marginTop="10dp"
+                android:inputType="text"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/childname"
+                android:layout_marginTop="10dp"
+                android:id="@+id/childdob"
+                android:hint="Date of Birth"
+                android:inputType="date"/>
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:id="@+id/rg"
+                android:layout_below="@id/childdob"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Male"
+                    android:checked="true"
+                    android:id="@+id/malebutton"
+                    android:layout_marginStart="50dp"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Female"
+                    android:id="@+id/femalebutton"
+                    android:layout_marginStart="100dp"/>
+            </RadioGroup>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rg"
+                android:layout_marginTop="10dp"
+                android:id="@+id/childphone"
+                android:inputType="phone"
+                android:hint="Phone"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/childphone"
+                android:layout_marginTop="10dp"
+                android:id="@+id/childmail"
+                android:inputType="textEmailAddress"
+                android:hint="E - mail"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/childmail"
+                android:layout_marginTop="10dp"
+                android:id="@+id/childpid"
+                android:hint="Parent Code"
+                android:inputType="text"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:text="Sign up"
+        android:id="@+id/signupbtn"/>
+
+</android.support.design.widget.CoordinatorLayout>
