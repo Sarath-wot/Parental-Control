@@ -414,6 +414,7 @@ public class SendService extends Service {
                             os.close();
                             connection.connect();
 
+
                             int rc = connection.getResponseCode();
                             if (rc == HTTP_OK) {
                                 InputStream inputStream = connection.getInputStream();
